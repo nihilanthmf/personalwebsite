@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.radial-gradient {
+  mask-image: radial-gradient(circle at 50%, #00000033, 20%, #000000);
+}
+
+@media only screen and (max-width: 1024px) {
+  .radial-gradient {
+    mask-image: radial-gradient(circle at 50%, #00000033, 35%, #000000);
+  }
+}
+
+.under-hero-radial-gradient {
+  mask-image: radial-gradient(circle at center top, #000000b8, 10%, #000000);
+}
+
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+.border-animation {
+  background: linear-gradient(130deg, #737373, #3f3f3f);
+  /* 3772ff */
+  background-size: 300% 200%;
+
+  -webkit-animation: Animation 2s ease infinite;
+  -moz-animation: Animation 2s ease infinite;
+  animation: Animation 2s ease infinite;
+}
+
+.lampFlicker {
+  animation: flicker 1s ease 3 forwards;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulsating-circle {
+  0% {
+    scale: 100%;
+  }
+  25% {
+    scale: 130%;
+  }
+  50% {
+    scale: 110%;
+  }
+  75% {
+    scale: 140%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+.pulsating-circle {
+  animation: pulsating-circle 1.5s ease infinite;
+}
+
+input[type="checkbox"] {
+
+  padding: 5px;
+  vertical-align: middle;
+  background-color: #ff0000;
+}
