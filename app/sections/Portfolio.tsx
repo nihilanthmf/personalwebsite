@@ -11,6 +11,16 @@ export default function Portfolio() {
       </h1>
 
       <div className="flex flex-col lg:grid lg:grid-cols-4 gap-4">
+      <Project
+          title="stayn"
+          alt="stayn"
+          description="churn prevention software (waiting list)"
+          image="stayn.jpeg"
+          className="lg:col-span-2"
+          stack="next.js"
+          href="https://stayn.artemymedvedev.com"
+          myWork="design + development"
+        />
         <Project
           title="puritify"
           alt="puritify"
