@@ -32,14 +32,14 @@ export default function Portfolio() {
           myWork="design + full stack development"
         />
         <Project
-          title="coldHunt twitter"
-          alt="coldHunt twitter"
-          description="software for automating Twitter cold outreach"
-          image="coldhunttwitter.jpeg"
+          title="ai cli"
+          alt="ai cli"
+          description="open source ai copilot inside your terminal, like Cursor in your cli"
+          image="aicli.jpeg"
           className="lg:col-span-2"
-          stack="puppeteer, electron, next.js"
-          href="https://cold-hunt.com"
-          myWork="design + full stack development"
+          stack="javascript"
+          href="https://github.com/nihilanthmf/cli-ai"
+          myWork="development"
         />
         <Project
           title="suprr"
@@ -50,6 +50,16 @@ export default function Portfolio() {
           stack="next.js, supabase"
           href="https://suprr.artemymedvedev.com"
           myWork="design + development"
+        />
+        <Project
+          title="coldHunt twitter"
+          alt="coldHunt twitter"
+          description="software for automating Twitter cold outreach"
+          image="coldhunttwitter.jpeg"
+          className="lg:col-span-2"
+          stack="puppeteer, electron, next.js"
+          href="https://cold-hunt.com"
+          myWork="design + full stack development"
         />
         <Project
           title="daniel dalen's community map"
