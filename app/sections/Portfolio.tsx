@@ -52,6 +52,16 @@ export default function Portfolio() {
           myWork="design + development"
         />
         <Project
+          title="cents"
+          alt="cents SaaS"
+          description="invoicing software"
+          image="cents.jpeg"
+          className="lg:col-span-2"
+          stack="next.js, supabase, node.js, express"
+          href="https://centsapp.com"
+          myWork="design + full stack development"
+        />
+        <Project
           title="coldHunt twitter"
           alt="coldHunt twitter"
           description="software for automating Twitter cold outreach"
@@ -91,16 +101,6 @@ export default function Portfolio() {
           href="https://chat.artemymedvedev.com"
           myWork="Design + Full stack development"
         /> */}
-        <Project
-          title="cents"
-          alt="cents SaaS"
-          description="invoicing software"
-          image="cents.png"
-          className="lg:col-span-2"
-          stack="next.js, supabase, node.js, express"
-          href="https://centsapp.com"
-          myWork="design + full stack development"
-        />
         <Project
           title="summify"
           alt="summify mobile app"
