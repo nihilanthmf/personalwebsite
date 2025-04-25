@@ -11,13 +11,13 @@ export default function Portfolio() {
       </h1>
 
       <div className="flex flex-col lg:grid lg:grid-cols-4 gap-4">
-      <Project
+        <Project
           title="stayn"
           alt="stayn"
           description="churn prevention software (waiting list)"
           image="stayn.jpeg"
           className="lg:col-span-2"
-          stack="next.js"
+          stack="next.js, supabase"
           href="https://stayn.artemymedvedev.com"
           myWork="design + development"
         />
@@ -41,7 +41,16 @@ export default function Portfolio() {
           href="https://cold-hunt.com"
           myWork="design + full stack development"
         />
-
+        <Project
+          title="suprr"
+          alt="suprr"
+          description="customer support software (waiting list)"
+          image="suprr.jpeg"
+          className="lg:col-span-2"
+          stack="next.js, supabase"
+          href="https://suprr.artemymedvedev.com"
+          myWork="design + development"
+        />
         <Project
           title="daniel dalen's community map"
           alt="daniel dalen's community map"
