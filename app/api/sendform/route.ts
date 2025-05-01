@@ -12,7 +12,7 @@ export async function POST(request: any) {
   const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
   await axios.post(url, {
     chat_id: chatId,
-    text: `Somebody wants to get in touch (artemymedvedev.com)!
+    text: `Somebody wants to get in touch (artemy.dev)!
 
 Name: ${body.name}
 Email: ${body.email}
