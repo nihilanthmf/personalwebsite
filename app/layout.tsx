@@ -30,7 +30,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className={`bg-black ${spaceGrotest.className}`}>
+        <div className="w-screen h-screen fixed bg-gradient-to-br from-primary/5 via-black to-primary/5" />
+
         <div className="lg:w-[80%] lg:ml-[10%] 2xl:w-[75%] 2xl:ml-[12.5%] bg-text/5 lg:border-r-[2px] lg:border-l-[2px] border-text/20 lg:px-8">
           <div className="lg:border-r-[2px] lg:border-l-[2px] border-text/20">
             {children}
